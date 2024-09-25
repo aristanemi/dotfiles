@@ -1,0 +1,18 @@
+[user]
+	email = sunkum@efr.de
+	name = Abhishek Sunkum Rammurthy
+[alias]
+	st = status
+	co = checkout
+	br = branch
+	tree = log --decorate --oneline --graph --all
+[http]
+	sslVerify = false
+[core]
+	editor = vi
+	autocrlf = input
+	excludesFile = ~/.gitignore
+[init]
+	defaultBranch = master
+[credential]
+	helper = /usr/share/doc/git/contrib/credential/libsecret/git-credential-libsecret

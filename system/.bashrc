@@ -139,3 +139,4 @@ source <(ng completion script)
 
 # Source Modules/init/bash
 source /usr/local/Modules/init/bash
+eval "$(gh copilot alias -- bash)"

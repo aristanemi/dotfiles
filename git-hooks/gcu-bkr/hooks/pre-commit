@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# Specify the file you want to check
+SPECIFIC_FILE="Dockerfile"
+
+# Check if the specific file is staged for commit
+if git diff --cached --name-only | grep -q "$SPECIFIC_FILE"; then
+    echo "Don't forget to increase version of docker container in .gitlab-ci-yml, as  $SPECIFIC_FILE is staged for commit."
+fi

@@ -1,0 +1,22 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "gdb",
+            "request": "attach",
+            "name": "Attach to gdbserver",
+            "gdbpath": "/usr/bin/gdb-multiarch",
+            "debugger_args": [
+                "-iex", "set sysroot /home/abhi/gcu-new-sysroot",
+            ],
+            "executable": "/home/abhi/bind-vol/GCU-Apps/IEC61850_Server/output/configjson2xml",
+            "target": "192.169.238.8:12345",
+            "remote": true,
+            "cwd": "${workspaceRoot}",
+            "valuesFormatting": "parseText"
+        }
+    ]
+}
